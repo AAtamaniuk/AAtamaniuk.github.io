@@ -253,6 +253,20 @@ body {
   float: right;
   margin: 20px 0;  
 }
+.flag {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 60px;
+  height: 60px;
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+  
+}
+.flag-new {
+  background: url("/img/flag-new.png") no-repeat 0 0;
+}
 
 /* MAIN HEADER */
 
@@ -479,12 +493,39 @@ input[type="search"]::placeholder {
 }
 .nav-big-item {
   display: inline-block;
+  vertical-align: top;
   box-sizing: border-box;
-  background-color: #293449;
+  padding-left: 25px;  
+  min-width: 300px;
+  min-height: 120px;    
 }
+.nav-big-item1 {background-color: #f6b22d;}
+.nav-big-item2 {background-color: #4aafde;}
+.nav-big-item3 {background-color: #cc79d1;}
+.nav-big-item4 {background-color: #85d179;}
+.nav-big-item5 {background-color: #f6b22d;}
+
+.nav-big-item .btn {  
+  min-width: 115px;
+  max-width: 115px;
+  text-align: center;
+  padding: 13px 10px;  
+  background-color: rgba(0, 0, 0, 0.3);  
+}
+.nav-big-item .btn:hover {background-color: rgba(0, 0, 0, 0.2);}
+.nav-big-item .btn:active {background-color: rgba(0, 0, 0, 0.1);}
+
 .nav-big .title {
   font-size: 24px;
   color: #ffffff;
+  max-width: 135px;
+}
+.nav-big-gallery {
+  display: inline-block;
+  vertical-align: top;
+  min-height: 265px;
+  min-width: 620px;
+  background-color: grey;  
 }
 
 /* CATALOG */
@@ -513,20 +554,6 @@ input[type="search"]::placeholder {
 .catalog-item .image {
   width: 218px;
   height: 169px;
-}
-.flag {
-  position: absolute;
-  top: -1px;
-  right: -1px;
-  width: 60px;
-  height: 60px;
-  text-indent: -1000px;
-  overflow: hidden;
-  z-index: 20;
-  
-}
-.catalog-item .flag-new {
-  background: url("/img/flag-new.png") no-repeat 0 0;
 }
 .catalog-item .actions{
     position:absolute;
@@ -609,7 +636,6 @@ input[type="search"]::placeholder {
   margin-left: -20px;
   font-size: 0;
 }
-
 .popular-brands a{  
   display: inline-block;
   vertical-align: top;  
@@ -647,7 +673,6 @@ input[type="search"]::placeholder {
   list-style: none;
   list-style-image: url("/img/list-style.png"); 
 }
-
 .about li{
   font-size: 18px;
   line-height: 20px;
