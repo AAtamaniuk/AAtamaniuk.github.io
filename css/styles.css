@@ -484,48 +484,54 @@ input[type="search"]::placeholder {
   background-color: #1d2739;
 }
 
-/* NAV-BIG */
+/* FEATURES */
 
-.nav-big {
+.features {  
   font-size: 0;
+  margin-left: -20px;
   padding-top: 59px;
   padding-bottom: 53px;
 }
-.nav-big-item {
-  display: inline-block;
-  vertical-align: top;
-  box-sizing: border-box;
-  padding-left: 25px;  
-  min-width: 300px;
-  min-height: 120px;    
+.features .card {
+  width: 250px;
+  height: 120px;
+  background: grey;
+  float: left;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
-.nav-big-item1 {background-color: #f6b22d;}
-.nav-big-item2 {background-color: #4aafde;}
-.nav-big-item3 {background-color: #cc79d1;}
-.nav-big-item4 {background-color: #85d179;}
-.nav-big-item5 {background-color: #f6b22d;}
+.features .card1 {background-color: #f6b22d;}
+.features .card2 {background-color: #4aafde;}
+.features .card3 {background-color: #cc79d1;}
+.features .card4 {background-color: #85d179;}
+.features .card5 {background-color: #f6b22d;}
 
-.nav-big-item .btn {  
+.features .btn {  
   min-width: 115px;
   max-width: 115px;
   text-align: center;
-  padding: 13px 10px;  
+  padding: 13px 10px;
+  margin-bottom: 50px;
   background-color: rgba(0, 0, 0, 0.3);  
 }
-.nav-big-item .btn:hover {background-color: rgba(0, 0, 0, 0.2);}
-.nav-big-item .btn:active {background-color: rgba(0, 0, 0, 0.1);}
+.features .btn:hover {background-color: rgba(0, 0, 0, 0.2);}
+.features .btn:active {background-color: rgba(0, 0, 0, 0.1);}
 
-.nav-big .title {
+.features .title {
   font-size: 24px;
+  line-height: 30px;
   color: #ffffff;
   max-width: 135px;
 }
-.nav-big-gallery {
-  display: inline-block;
-  vertical-align: top;
-  min-height: 265px;
-  min-width: 620px;
-  background-color: grey;  
+.features .slider {
+  background: black;
+  width: 620px;
+  height: 260px;
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 20px;  
 }
 
 /* CATALOG */
@@ -632,11 +638,11 @@ input[type="search"]::placeholder {
 
 /* POPULAR BRANDS */
 
-.popular-brands .row {
+.pop-brands .row {
   margin-left: -20px;
   font-size: 0;
 }
-.popular-brands a{  
+.pop-brands a{  
   display: inline-block;
   vertical-align: top;  
   margin-left: 20px;
@@ -685,4 +691,68 @@ input[type="search"]::placeholder {
 .about .contacts .btn {
   min-width: 180px;
   margin-top: 40px;
+}
+
+/* FOOTER */
+.footer-logo {
+  display: block;
+  float: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0;
+  line-height: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ee3643;
+  -webkit-box-shadow: 0px 5px 0px 0px rgba(181, 41, 51, 1), inset 0px 1px 0px 0px rgba(224, 54, 67, 1);
+  -moz-box-shadow: 0px 5px 0px 0px rgba(181, 41, 51, 1), inset 0px 1px 0px 0px rgba(224, 54, 67, 1);
+  box-shadow: 0px 5px 0px 0px rgba(181, 41, 51, 1), inset 0px 1px 0px 0px rgba(224, 54, 67, 1);  
+}
+.footer-top-wrap {
+  background-color: #32425c;
+  margin-bottom: 0;
+}
+.footer-bottom-wrap {
+  background-color: #293449; 
+  padding-bottom: 30px;
+  padding-top: 35px;
+}
+.social-btn {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  
+  font-size: 18px;
+  line-height: 40px;
+  color: #fff;
+  
+  background-color: #212a3a;
+       border-radius: 40px 40px 40px 40px;
+  -moz-border-radius: 40px 40px 40px 40px;
+  -webkit-border-radius: 40px 40px 40px 40px;
+}
+
+.footer-copyright {
+  float: left;
+  width: 310px;  
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+}
+.footer-feedback, .footer-desing{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+}
+.footer-feedback a, .footer-desing a{
+    color: #ffd180;
+}
+.footer-contacts-wrap {
+  float: right;
 }
